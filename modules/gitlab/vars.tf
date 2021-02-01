@@ -1,4 +1,4 @@
-variable "gitlab_auth_token" {
+variable "gitlab_token" {
   description = "Gitlab's users with admin priviledge"
 }
 variable "gitlab_project_name" {

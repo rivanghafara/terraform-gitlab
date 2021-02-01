@@ -1,0 +1,30 @@
+module "example_gitlab" {
+
+  source = "./../modules/gitlab"
+
+  # Vars Gitlab Auth
+  gitlab_token     = "<YOUR GITLAB TOKEN>"
+
+  #Vars Gitlab Project's Identity
+  gitlab_project_name   = "<YOUR PROJECT REPO NAME>"
+  gitlab_project_id     = "<YOUR PROJECT ID>"
+  gitlab_variable_key   = "<YOUR PROJECT VARIABLE KEY>"
+  gitlab_variable_value = "<YOUR PROJECT VARIABLE VALUE>"
+
+}
+
+# EXAMPLE
+# module "example_gitlab" {
+
+#   source = "./../modules/gitlab"
+
+#   # Vars Gitlab Auth
+#   gitlab_token     = "OjaisjkBAVWksN"
+
+#   #Vars Gitlab Project's Identity
+#   gitlab_project_name   = "example_app"
+#   gitlab_project_id     = "123"
+#   gitlab_variable_key   = "project_variable_key"
+#   gitlab_variable_value = "project_variable_value"
+
+# }
